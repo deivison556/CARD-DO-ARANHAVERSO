@@ -1,5 +1,4 @@
 /* Configurações gerais */
-
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -20,6 +19,7 @@ body {
 header {
     height: 100px;
     width: 100%;
+    
 }
 
 /* Logo da aranha - cabeçalho*/
@@ -144,6 +144,159 @@ footer span {
 }
 
 /* Configuração do responsivo */
+/* Telas de 1024px */
 @media screen and (max-width:1024px) {
+body {
+    height: 100vh;
+}
+
+/* Configuração de todos os cards */
+#boxcard-geral {
+    gap: 5px;
+    height: 570px;
+}
     
+/* Container dos cards */
+.container-card {
+    height: 450px;
+    width: 320px;
+} 
+    
+/* Titulo dos cards */
+.container-card h1 {
+    font-size: 25px;
+}
+    
+/* Imagem dos Cards */
+.container-card img {
+    height: 250px;
+    width: 270px;
+}
+    
+/* Descrição sobre os personagens nos cards */
+.container-description {
+    font-size: 14px;
+}
+}
+
+/* Telas de 768px */
+@media screen and (max-width:768px) {
+/* Configuração do cabeçalho */
+ header {
+    height: 70px;
+    width: 100%;
+}
+
+/* Logo da aranha - cabeçalho*/
+#container-logo {
+    position: relative;
+    top: 10px;
+}
+
+#container-logo img {
+    height: 50px;
+    width: 50px;
+}
+
+/* Menu de naveção - cabeçalho */
+#container-navegation {
+    justify-content: space-between;
+    top: -40px;
+}
+
+#container-navegation a {
+    font-size: 16px;
+}
+
+/* Configuração de todos os cards */
+#boxcard-geral {
+    margin-top: 10vh;
+    height: 500px;
+}
+    
+/* Container dos cards */
+.container-card {
+    height: 450px;
+    width: 240px;
+} 
+    
+/* Titulo dos cards */
+.container-card h1 {
+    font-size: 25px;
+}
+    
+/* Imagem dos Cards */
+.container-card img {
+    height: 240px;
+    width: 220px;
+}
+    
+/* Descrição sobre os personagens nos cards */
+.container-description {
+     font-size: 12px;
+}
+
+footer {
+    margin-top: 80px;
+}
+}
+
+/* Telas 600px */
+@media screen and (max-width:600px) {
+/* Configuração do cabeçalho */
+header {
+    margin-top: 10px;
+}
+
+/* Logo da aranha - cabeçalho*/
+#container-logo {
+    margin: 0 auto;
+    top: 10px;
+    left: -12px;
+}
+
+#container-logo img {
+    height: 30px;
+    width: 30px;
+}
+
+/* Menu de naveção - cabeçalho */
+#container-navegation {
+    justify-content: space-around;
+    top: -30px;
+}
+
+/* Configuração de todos os cards */
+#boxcard-geral {
+    flex-direction: column;
+    margin-top: 10vh;
+    height: 500px;
+}
+    
+/* Container dos cards */
+.container-card {
+    height: 450px;
+    width: 240px;
+} 
+    
+/* Titulo dos cards */
+.container-card h1 {
+    font-size: 25px;
+}
+    
+/* Imagem dos Cards */
+.container-card img {
+    height: 240px;
+    width: 220px;
+}
+    
+/* Descrição sobre os personagens nos cards */
+.container-description {
+     font-size: 12px;
+}
+
+footer {
+    margin-top: 80px;
+}
+
 }
