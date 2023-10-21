@@ -13,13 +13,14 @@ body {
     background-image: url(../imagens/backgroundspider.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 
 /* Configuração do cabeçalho */
 header {
-    height: 100px;
-    width: 100%;
-    
+    margin-top: 5px;
+    height: 80px;
+    width: 100%; 
 }
 
 /* Logo da aranha - cabeçalho*/
@@ -30,8 +31,10 @@ header {
 }
 
 #container-logo img {
-    height: 70px;
-    width: 70px;
+    position: relative;
+    left:-10px;
+    height: 60px;
+    width: 60px;
 }
 
 /* Menu de naveção - cabeçalho */
@@ -41,14 +44,14 @@ header {
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    top: -50px;
+    top: -52px;
 }
 
 #container-navegation a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     text-transform: capitalize;
-    padding: 8px;
+    padding: 8px 10px;
     border-radius: 20px;
     color: #ffffff;
     transition: 1s;
@@ -63,8 +66,8 @@ header {
 #boxcard-geral {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin-top: 2vh;
+    justify-content: space-evenly;
+    margin-top: 5vh;
     width: 100%;
     height: 730px;
 }
@@ -75,8 +78,8 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 620px;
-    width: 420px;
+    height: 580px;
+    width: 380px;
     padding: 0 5px;
     border-radius: 15px;
     cursor: pointer;
@@ -84,7 +87,7 @@ header {
 }
 
 .container-card:hover {
-    transform: translateY(-15px);
+    transform: translateY(-10px);
     transition: 1s;
     border: 1px solid white;
 }
@@ -93,20 +96,21 @@ header {
 .container-card h1 {
     text-transform: capitalize;
     color: white;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 /* Imagem dos Cards */
 .container-card img {
     border-radius: 8px;
-    height: 400px;
-    width: 350px;
+    height: 350px;
+    width: 320px;
 }
 
 /* Descrição sobre os personagens nos cards */
 .container-description {
     text-align: center;
-    font-size: 16px;
+    padding: 15px;
+    font-size: 14px;
     color: white;
 }
 
@@ -123,6 +127,10 @@ header {
 /* Card da Gwen Stacy */
 .box-gwen {
     background-color: #ff04ab;
+}
+
+.box-gwen h1 {
+    margin-top: -20px;
 }
 
 /* Configuração do rodapé */
@@ -144,21 +152,84 @@ footer span {
 }
 
 /* Configuração do responsivo */
+/* Telas 1680px */
+@media screen and (max-width: 1680px) {
+/* Configuração de todos os cards */
+#boxcard-geral {
+    margin-top: 3vh;
+}
+}
+
+/* Telas de 1440px */
+@media screen and (max-width:1440px) {
+/* Configuração de todos os cards */
+#boxcard-geral {
+    height: 550px;
+    margin-top: 5vh;
+}
+        
+/* Container dos cards */
+.container-card {
+    height: 520px;
+    width: 320px;
+} 
+        
+/* Titulo dos cards */
+.container-card h1 {
+    font-size: 30px;
+}
+        
+/* Imagem dos Cards */
+.container-card img {
+    height: 280px;
+    width: 280px;
+}
+
+/* Descrição sobre os personagens nos cards */
+.container-description {
+    font-size: 14px;
+}
+
+/* Configuração do rodapé */
+footer {
+    margin-top: 70px;
+}
+}
+
 /* Telas de 1024px */
 @media screen and (max-width:1024px) {
-body {
-    height: 100vh;
+/* Configuração do cabeçalho */
+header {
+    margin-top: 15px;
+    height: 70px;
 }
+
+/* Logo da aranha - cabeçalho*/
+#container-logo img {
+    height: 50px;
+    width: 50px;
+}
+
+/* Menu de naveção - cabeçalho */
+#container-navegation {
+    justify-content: space-around;
+    top: -50px;
+}
+
+#container-navegation a {
+    font-size: 16px;
+}
+
 
 /* Configuração de todos os cards */
 #boxcard-geral {
-    gap: 5px;
-    height: 570px;
+    height: 550px;
+    margin-top: 5vh;
 }
     
 /* Container dos cards */
 .container-card {
-    height: 450px;
+    height: 500px;
     width: 320px;
 } 
     
@@ -177,31 +248,32 @@ body {
 .container-description {
     font-size: 14px;
 }
+
+/* Configuração do rodapé */
+footer {
+    margin-top: 70px;
+}
 }
 
 /* Telas de 768px */
 @media screen and (max-width:768px) {
 /* Configuração do cabeçalho */
  header {
-    height: 70px;
-    width: 100%;
+    height: 65px;
 }
 
 /* Logo da aranha - cabeçalho*/
-#container-logo {
-    position: relative;
-    top: 10px;
-}
-
 #container-logo img {
-    height: 50px;
-    width: 50px;
+    position:relative;
+    left:-10px;
+    height: 40px;
+    width: 40px;
 }
 
 /* Menu de naveção - cabeçalho */
 #container-navegation {
     justify-content: space-between;
-    top: -40px;
+    top: -45px;
 }
 
 #container-navegation a {
@@ -210,25 +282,20 @@ body {
 
 /* Configuração de todos os cards */
 #boxcard-geral {
-    margin-top: 10vh;
-    height: 500px;
+    margin-top: 3vh;
+    height: 550px;
 }
     
 /* Container dos cards */
 .container-card {
-    height: 450px;
+    height: 430px;
     width: 240px;
 } 
     
-/* Titulo dos cards */
-.container-card h1 {
-    font-size: 25px;
-}
-    
 /* Imagem dos Cards */
 .container-card img {
-    height: 240px;
-    width: 220px;
+    height: 180px;
+    width: 200px;
 }
     
 /* Descrição sobre os personagens nos cards */
@@ -237,57 +304,73 @@ body {
 }
 
 footer {
-    margin-top: 80px;
+    margin-top: 70px;
 }
 }
+
+
+
+/* Responsivo em construção a partir daqui! */
+
+
 
 /* Telas 600px */
 @media screen and (max-width:600px) {
+
+
 /* Configuração do cabeçalho */
 header {
-    margin-top: 10px;
+    height: 50px;
 }
 
 /* Logo da aranha - cabeçalho*/
-#container-logo {
-    margin: 0 auto;
-    top: 10px;
-    left: -12px;
-}
-
 #container-logo img {
+    position:relative;
+    left:-10px;
     height: 30px;
     width: 30px;
 }
 
 /* Menu de naveção - cabeçalho */
 #container-navegation {
+    justify-content: space-between;
+    top: -85px;
+}
+
+#container-navegation a {
+    font-size: 14px;
+}
+
+/* Menu de naveção - cabeçalho */
+#container-navegation {
     justify-content: space-around;
-    top: -30px;
+    margin-top: 50px;
 }
 
 /* Configuração de todos os cards */
 #boxcard-geral {
-    flex-direction: column;
-    margin-top: 10vh;
-    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2vh;
+    gap: 20px;
 }
     
 /* Container dos cards */
 .container-card {
-    height: 450px;
+    margin: 0 auto;
+    height: 400px;
     width: 240px;
 } 
     
 /* Titulo dos cards */
 .container-card h1 {
-    font-size: 25px;
+    font-size: 20px;
 }
     
 /* Imagem dos Cards */
 .container-card img {
-    height: 240px;
-    width: 220px;
+    height: 150px;
+    width: 180px;
 }
     
 /* Descrição sobre os personagens nos cards */
@@ -296,7 +379,6 @@ header {
 }
 
 footer {
-    margin-top: 80px;
+    margin-top: 60px;
 }
-
 }
