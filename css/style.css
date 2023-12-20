@@ -13,7 +13,6 @@ body {
     background-image: url(../imagens/backgroundspider.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
 }
 
 /* Configuração do cabeçalho */
@@ -37,7 +36,7 @@ header {
     width: 60px;
 }
 
-/* Menu de naveção - cabeçalho */
+/* Menu de navegação - cabeçalho */
 #container-navegation {
     position: relative;
     display: flex;
@@ -138,7 +137,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 45px;
+    margin-top: 30px;
     color: white;
 }
 
@@ -198,10 +197,15 @@ footer {
 
 /* Telas de 1024px */
 @media screen and (max-width:1024px) {
+/* Configuração do corpo do site */
+body {
+    height: 100vh;
+}
+
 /* Configuração do cabeçalho */
 header {
     margin-top: 15px;
-    height: 70px;
+    height: 50px;
 }
 
 /* Logo da aranha - cabeçalho*/
@@ -209,17 +213,6 @@ header {
     height: 50px;
     width: 50px;
 }
-
-/* Menu de naveção - cabeçalho */
-#container-navegation {
-    justify-content: space-around;
-    top: -50px;
-}
-
-#container-navegation a {
-    font-size: 16px;
-}
-
 
 /* Configuração de todos os cards */
 #boxcard-geral {
@@ -255,6 +248,95 @@ footer {
 }
 }
 
+/* Telas de 884px */ 
+@media screen and (max-width:884px) {
+/* Configuração do cabeçalho */
+header {
+    margin-top: 30px;
+    height: 50px;
+}
+/* Background do site */
+body {
+    height: 100vh;
+}
+
+/* Configuração de todos os cards */
+#boxcard-geral {
+    margin-top: 15vh;
+    gap: 2px;
+}
+/* Container dos cards */
+.container-card {
+    height: 550px;
+    width: 280px;
+} 
+    
+/* Titulo dos cards */
+.container-card h1 {
+    font-size: 22px;
+}
+    
+/* Imagem dos Cards */
+.container-card img {
+    height: 250px;
+    width: 250px;
+}
+    
+/* Descrição sobre os personagens nos cards */
+.container-description {
+    font-size: 14px;
+}
+
+/* Configuração do rodapé */
+footer {
+    margin-top: 200px;
+}
+}
+
+/* Telas de 800px */ 
+@media screen and (max-width:800px) {
+
+/* Configuração do cabeçalho */
+header {
+    margin-top: 25px;
+    height: 50px;
+}
+
+/* Configuração de todos os cards */
+#boxcard-geral {
+    margin-top: 2vh;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+    
+/* Container dos cards */
+.container-card {
+    height: 520px;
+    width: 340px;
+} 
+    
+/* Titulo dos cards */
+.container-card h1 {
+    font-size: 25px;
+}
+    
+/* Imagem dos Cards */
+.container-card img {
+    height: 270px;
+    width: 300px;
+}
+    
+/* Descrição sobre os personagens nos cards */
+.container-description {
+    font-size: 14px;
+}
+
+/* Configuração do rodapé */
+footer {
+    margin-top: 525px;
+}
+}
+
 /* Telas de 768px */
 @media screen and (max-width:768px) {
 /* Configuração do cabeçalho */
@@ -282,7 +364,7 @@ footer {
 
 /* Configuração de todos os cards */
 #boxcard-geral {
-    margin-top: 3vh;
+    margin-top: 7vh;
     height: 550px;
 }
     
@@ -304,81 +386,9 @@ footer {
 }
 
 footer {
-    margin-top: 70px;
+    margin-top: 200px;
 }
 }
 
+/* Telas de 428px */
 
-
-/* Responsivo em construção a partir daqui! */
-
-
-
-/* Telas 600px */
-@media screen and (max-width:600px) {
-
-
-/* Configuração do cabeçalho */
-header {
-    height: 50px;
-}
-
-/* Logo da aranha - cabeçalho*/
-#container-logo img {
-    position:relative;
-    left:-10px;
-    height: 30px;
-    width: 30px;
-}
-
-/* Menu de naveção - cabeçalho */
-#container-navegation {
-    justify-content: space-between;
-    top: -85px;
-}
-
-#container-navegation a {
-    font-size: 14px;
-}
-
-/* Menu de naveção - cabeçalho */
-#container-navegation {
-    justify-content: space-around;
-    margin-top: 50px;
-}
-
-/* Configuração de todos os cards */
-#boxcard-geral {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 2vh;
-    gap: 20px;
-}
-    
-/* Container dos cards */
-.container-card {
-    margin: 0 auto;
-    height: 400px;
-    width: 240px;
-} 
-    
-/* Titulo dos cards */
-.container-card h1 {
-    font-size: 20px;
-}
-    
-/* Imagem dos Cards */
-.container-card img {
-    height: 150px;
-    width: 180px;
-}
-    
-/* Descrição sobre os personagens nos cards */
-.container-description {
-     font-size: 12px;
-}
-
-footer {
-    margin-top: 60px;
-}
-}
