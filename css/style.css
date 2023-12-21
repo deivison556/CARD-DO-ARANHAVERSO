@@ -96,6 +96,7 @@ header {
     text-transform: capitalize;
     color: white;
     font-size: 35px;
+    margin-bottom: 10px;
 }
 
 /* Imagem dos Cards */
@@ -267,7 +268,7 @@ body {
 }
 /* Container dos cards */
 .container-card {
-    height: 550px;
+    height: 520px;
     width: 280px;
 } 
     
@@ -300,6 +301,11 @@ footer {
 header {
     margin-top: 25px;
     height: 50px;
+}
+
+/* Menu de navegação - cabeçalho */
+#container-navegation {
+    justify-content: space-around;
 }
 
 /* Configuração de todos os cards */
@@ -354,7 +360,7 @@ footer {
 
 /* Menu de naveção - cabeçalho */
 #container-navegation {
-    justify-content: space-between;
+    justify-content: space-evenly;
     top: -45px;
 }
 
@@ -391,4 +397,3 @@ footer {
 }
 
 /* Telas de 428px */
-
